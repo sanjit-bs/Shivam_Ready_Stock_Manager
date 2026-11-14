@@ -65,7 +65,7 @@ with tab_entry:
     with col_prod:
         st.subheader("🏭 Production Entry (+ Stock)")
         with st.container(border=True):
-            prod_date = st.date_input("Production Date *", value=date.today(), key=f"p_date_{k}")
+            prod_date = st.date_input("Production Date *", value=date.today(), format="DD/MM/YYYY", key=f"p_date_{k}")
 
             # Company Dropdown loaded from Main_Stock + option to add new
             p_comp_options = ["Select Company"] + master_companies + ["Others (New Company)"]
@@ -145,7 +145,7 @@ with tab_entry:
     with col_del:
         st.subheader("🚚 Delivery Entry (- Stock)")
         with st.container(border=True):
-            del_date = st.date_input("Delivery Date *", value=date.today(), key=f"d_date_{k}")
+            del_date = st.date_input("Delivery Date *", value=date.today(), format="DD/MM/YYYY", key=f"d_date_{k}")
 
             # Company Dropdown loaded from Main_Stock
             d_comp_options = ["Select Company"] + master_companies
