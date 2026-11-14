@@ -11,7 +11,7 @@ st.title("📦 Ready Product Stock Management")
 
 APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwZ5UOX93DVnrSuRPNdTs00GE1vGKoxGVSkCNN9g3pU7UNQKQwEe3uYnzx9YHZKKjGafw/exec"
 
-UNIT_OPTIONS = ["per pcs", "per kg"]
+UNIT_OPTIONS = ["pcs", "kg"]
 
 # ======================================================
 # Data Loader (Reads Main_Stock & Stock_History_Log)
